@@ -1,171 +1,187 @@
-# 🐍 Python Mini Projects — Code With Harry Series
-
-A collection of 7 beginner-to-intermediate Python mini projects built while following the [Code With Harry](https://www.codewithharry.com/) Python tutorial series. Each project explores a different aspect of Python — from game logic and file I/O to GUI applications and system notifications.
+Here's the full copy-paste text version:
 
 ---
 
-## 📁 Projects Overview
+# Python Mini Projects — Code With Harry Series
+
+**Version 1.0 | Open Source — MIT License | Python 3.8+**
+
+---
+
+## 1. Project Overview
+
+This repository is a curated collection of seven Python mini projects developed as part of the Code With Harry tutorial series. Each project is self-contained, progressively increases in complexity, and demonstrates a distinct set of Python concepts — ranging from CLI game logic and file system automation to GUI application development and desktop notifications.
 
 | # | Project | Description | Key Library |
 |---|---------|-------------|-------------|
-| 1 | [Snake Water Gun Game](#1-snake-water-gun-game) | CLI game — Python twist on Rock Paper Scissors | `random` |
-| 2 | [File Organiser](#2-file-organiser) | Auto-sorts files into folders by type | `os`, `shutil` |
-| 3 | [Typing Speed Tester](#3-typing-speed-tester) | Measures WPM and accuracy in the terminal | `time`, `random` |
-| 4 | [Quiz App](#4-quiz-app) | Multiple-choice quiz with live scoring | — |
-| 5 | [PDF Merger](#5-pdf-merger) | GUI app to select and merge PDF files | `tkinter`, `pypdf` |
-| 6 | [Water Drinking Reminder](#6-water-drinking-reminder) | Desktop notification reminder on a timer | `plyer` |
-| 7 | [Password Manager](#7-password-manager) | Save and retrieve passwords from a local file | `pyperclip` |
+| 1 | Snake Water Gun Game | CLI game — Python twist on Rock Paper Scissors | random |
+| 2 | File Organiser | Auto-sorts files into folders by type | os, shutil |
+| 3 | Typing Speed Tester | Measures WPM and accuracy in the terminal | time, random |
+| 4 | Quiz App | Multiple-choice quiz with live scoring | Built-in |
+| 5 | PDF Merger | GUI app to select and merge PDF files | tkinter, pypdf |
+| 6 | Water Drinking Reminder | Desktop notification reminder on a timer | plyer |
+| 7 | Password Manager | Save and retrieve passwords from a local file | pyperclip |
 
 ---
 
-## Getting Started
+## 2. Getting Started
 
-### Prerequisites
+**Prerequisites**
+- Python 3.8 or higher installed
+- pip package manager available
+- A terminal / command prompt
 
-- Python 3.8 or higher
-- pip
+**Installation**
 
-### Installation
+Clone the repository to your local machine:
 
-Clone the repository and install any required dependencies for the project you want to run:
-
-```bash
+```
 git clone https://github.com/your-username/python-cwh-projects.git
 cd python-cwh-projects
 ```
 
 ---
 
-## 📌 Project Details
+## 3. Project Details
 
-### 1. Snake Water Gun Game
-> `mini project 1 Chinese water gun snake game/ChineseSWG_Game.py`
+### Project 1: Snake Water Gun Game
+**File:** `mini project 1 Chinese water gun snake game/ChineseSWG_Game.py`
 
 A command-line game based on the classic Chinese hand game — Snake, Water, Gun. The player picks one of three options and competes against a randomly generated computer choice.
 
-**Rules:** Snake drinks Water · Water douses Gun · Gun shoots Snake
+**Rules:**
+- Snake drinks Water
+- Water douses Gun
+- Gun shoots Snake
 
-```bash
+**Run:**
+```
 python "mini project 1 Chinese water gun snake game/ChineseSWG_Game.py"
 ```
 
 ---
 
-### 2. File Organiser
-> `mini project 2 file organiser/fileorganiser.py`
+### Project 2: File Organiser
+**File:** `mini project 2 file organiser/fileorganiser.py`
 
-Automatically scans the current working directory and sorts files into categorised subfolders (PDFs, Images, Videos, Word Files, Text Files) based on their extension.
+Automatically scans the current working directory and sorts files into categorised subfolders — PDFs, Images, Videos, Word Files, and Text Files — based on file extension.
 
-```bash
+**Note:** Run this inside the folder you want to organise. It will move files in place.
+
+**Run:**
+```
 cd "mini project 2 file organiser"
 python fileorganiser.py
 ```
 
-> ⚠️ Run this inside a folder you want to organise — it will move files in place.
-
 ---
 
-### 3. Typing Speed Tester
-> `mini project 3/speedTester.py`
+### Project 3: Typing Speed Tester
+**File:** `mini project 3/speedTester.py`
 
-Presents the user with a random sentence and measures how fast and accurately they type it. Outputs words per minute (WPM) and character-level accuracy.
+Presents the user with a randomly selected sentence and measures how fast and accurately they reproduce it. Outputs words per minute (WPM) and character-level accuracy as a percentage.
 
-```bash
+**Run:**
+```
 python "mini project 3/speedTester.py"
 ```
 
 ---
 
-### 4. Quiz App
-> `mini project 4 quiz app/quizapp.py`
+### Project 4: Quiz App
+**File:** `mini project 4 quiz app/quizapp.py`
 
-A terminal-based multiple-choice quiz covering general knowledge. Tracks the user's score and displays it at the end.
+A terminal-based multiple-choice quiz covering general knowledge topics. Tracks the user's score in real time and displays a final summary upon completion.
 
-```bash
+**Run:**
+```
 python "mini project 4 quiz app/quizapp.py"
 ```
 
 ---
 
-### 5. PDF Merger
-> `mini project 5/pdfmerger.py`
+### Project 5: PDF Merger
+**File:** `mini project 5/pdfmerger.py`
 
-A GUI application built with `tkinter` that lets users select multiple PDF files and merge them into a single output file using a file dialog.
+A desktop GUI application built with tkinter that enables users to select multiple PDF files via a file dialog and merge them into a single output PDF using the pypdf library.
 
 **Install dependencies:**
-```bash
+```
 pip install pypdf
 ```
 
-```bash
+**Run:**
+```
 python "mini project 5/pdfmerger.py"
 ```
 
 ---
 
-### 6. Water Drinking Reminder
-> `mini project 6 water drinking reminder/water_reminder.py`
+### Project 6: Water Drinking Reminder
+**File:** `mini project 6 water drinking reminder/water_reminder.py`
 
-A background script that sends a desktop push notification every 30 minutes reminding you to drink water. Uses `plyer` for cross-platform notification support.
+A lightweight background script that sends a cross-platform desktop push notification every 30 minutes reminding the user to drink water. Powered by the plyer library for OS-level notification support.
 
 **Install dependencies:**
-```bash
+```
 pip install plyer
 ```
 
-```bash
+**Run:**
+```
 python "mini project 6 water drinking reminder/water_reminder.py"
 ```
 
 ---
 
-### 7. Password Manager
-> `mini project 7/passwordManager.py`
+### Project 7: Password Manager
+**File:** `mini project 7/passwordManager.py`
 
-A simple CLI password manager that saves website-password pairs to a local text file. Retrieve any saved password and have it automatically copied to your clipboard.
+A simple CLI password manager that persists website-password pairs to a local text file. Users can retrieve any saved password, which is automatically copied to the system clipboard via pyperclip.
+
+**Note:** Passwords are stored in plain text. This project is for educational purposes only — do not use it for real credentials.
 
 **Install dependencies:**
-```bash
+```
 pip install pyperclip
 ```
 
-```bash
+**Run:**
+```
 python "mini project 7/passwordManager.py"
 ```
 
-> ⚠️ Passwords are stored in plain text. This project is intended for learning purposes only — do not use it to store real credentials.
+---
+
+## 4. Technology Stack
+
+| Category | Tools & Libraries |
+|----------|------------------|
+| Language | Python 3.8+ |
+| GUI Framework | tkinter |
+| PDF Handling | pypdf |
+| Notifications | plyer |
+| Clipboard | pyperclip |
+| Standard Library | os, shutil, time, random |
 
 ---
 
-## 🛠️ Tech Stack
+## 5. Learning Objectives
 
-- **Language:** Python 3
-- **GUI:** tkinter
-- **Libraries:** `pypdf`, `plyer`, `pyperclip`, `os`, `shutil`, `time`, `random`
-
----
-
-## 📚 Learning Objectives
-
-Through these projects, the following Python concepts are covered:
-
-- Functions, conditionals, and loops
-- File reading and writing (`open`, `shutil`)
-- Working with the OS (`os` module)
-- Building GUIs with `tkinter`
-- Sending desktop notifications
-- Timing and measuring user input
-- Clipboard interaction
+| Concept | Application |
+|---------|-------------|
+| Functions, Conditionals & Loops | Core Python control flow and reusable functions |
+| File I/O | Reading and writing files using open() and shutil |
+| OS Interaction | Automating file and directory tasks via the os module |
+| GUI Development | Building desktop applications with tkinter |
+| Desktop Notifications | Sending cross-platform alerts using plyer |
+| Input Timing & Accuracy | Measuring typing speed and precision in real time |
+| Clipboard Interaction | Programmatic copy-paste via pyperclip |
 
 ---
 
-## 🤝 Acknowledgements
+## 6. Acknowledgements & License
 
-Projects built following the **Code With Harry** Python tutorial series.  
-Check out the series at [codewithharry.com](https://www.codewithharry.com/).
+Projects built following the Code With Harry Python tutorial series. Refer to codewithharry.com for video walkthroughs and course material.
 
----
-
-## 📄 License
-
-This repository is open source and available under the [MIT License](LICENSE).
+This repository is open source and distributed under the MIT License. See the LICENSE file in the root of the repository for full terms.
